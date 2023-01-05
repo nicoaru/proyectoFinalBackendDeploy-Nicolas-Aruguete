@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "e3cfebcf-7e2b-429d-a4d1-c9675156af38",
-		"name": "Api Proyecto Backend",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"_postman_id": "377cf0b8-6a4e-4125-ac67-51f00448cc8e",
+		"name": "Vercel Api Proyecto Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25206114"
 	},
 	"item": [
 		{
@@ -24,9 +25,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{local8080}}/api/productos",
+							"raw": "{{vercel}}/api/productos",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"api",
@@ -52,9 +53,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{local8080}}/api/productos/:idProducto",
+							"raw": "{{vercel}}/api/productos/:idProducto",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"api",
@@ -87,9 +88,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{local8080}}/api/productos/categorias/Ropa",
+							"raw": "{{vercel}}/api/productos/categorias/Ropa",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"api",
@@ -126,9 +127,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{local8080}}/api/productos/",
+							"raw": "{{vercel}}/api/productos/",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"api",
@@ -164,9 +165,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{local8080}}/api/productos/:idProducto",
+							"raw": "{{vercel}}/api/productos/:idProducto",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"api",
@@ -199,9 +200,9 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{local8080}}/api/productos",
+							"raw": "{{vercel}}/api/productos",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"api",
@@ -227,9 +228,9 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{local8080}}/api/productos/:idProducto",
+							"raw": "{{vercel}}/api/productos/:idProducto",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"api",
@@ -259,7 +260,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzYjViNTZmYWI1ZWEzZjMxZDg2NjVjMiIsInVzZXJuYW1lIjoibmljb2FydSIsIm5hbWUiOiJOaWNvbMOhcyBBcnVndWV0ZSIsImVtYWlsIjoibmljb19hcnVAeWFob28uY29tLmFyIiwidGVsZXBob25lIjoiKzU0OTExNDg4ODk4NTEiLCJhZGRyZXNzIjoiRHJhZ28gMzMwIiwiaW1ndXJsIjoiaHR0cHM6Ly9jZG4wLmJpb2VuY2ljbG9wZWRpYS5jb20vZXMvcG9zdHMvMi83LzEvZXN0cmVsbGFfZGVfbWFyXzE3Ml9vcmlnLmpwZyIsImNyZWF0ZWRBdCI6IjIwMjMtMDEtMDRUMTc6MjA6NDcuMjA2WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDEtMDRUMTc6MjA6NDcuMjA2WiIsIl9fdiI6MH0sImlhdCI6MTY3Mjk0NzI3MSwiZXhwIjoxNjcyOTQ3ODcxfQ.Zfax6CFMqVoF1oLtK_-6IX0LUtmoGAB3kcziYDK46W0",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzYjViNTZmYWI1ZWEzZjMxZDg2NjVjMiIsInVzZXJuYW1lIjoibmljb2FydSIsIm5hbWUiOiJOaWNvbMOhcyBBcnVndWV0ZSIsImVtYWlsIjoibmljb19hcnVAeWFob28uY29tLmFyIiwidGVsZXBob25lIjoiKzU0OTExNDg4ODk4NTEiLCJhZGRyZXNzIjoiRHJhZ28gMzMwIiwiaW1ndXJsIjoiaHR0cHM6Ly9jZG4wLmJpb2VuY2ljbG9wZWRpYS5jb20vZXMvcG9zdHMvMi83LzEvZXN0cmVsbGFfZGVfbWFyXzE3Ml9vcmlnLmpwZyIsImNyZWF0ZWRBdCI6IjIwMjMtMDEtMDRUMTc6MjA6NDcuMjA2WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDEtMDRUMTc6MjA6NDcuMjA2WiIsIl9fdiI6MH0sImlhdCI6MTY3Mjk1ODk1NCwiZXhwIjoxNjcyOTU5NTU0fQ.UBGbEQmZYg3WgGxIjhPiRsa3wQA2oJUD4STqUKzQdj4",
 									"type": "string"
 								}
 							]
@@ -267,9 +268,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{local8080}}/api/carritos",
+							"raw": "{{vercel}}/api/carritos",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"api",
@@ -287,7 +288,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzYjViNTZmYWI1ZWEzZjMxZDg2NjVjMiIsInVzZXJuYW1lIjoibmljb2FydSIsIm5hbWUiOiJOaWNvbMOhcyBBcnVndWV0ZSIsImVtYWlsIjoibmljb19hcnVAeWFob28uY29tLmFyIiwidGVsZXBob25lIjoiKzU0OTExNDg4ODk4NTEiLCJhZGRyZXNzIjoiRHJhZ28gMzMwIiwiaW1ndXJsIjoiaHR0cHM6Ly9jZG4wLmJpb2VuY2ljbG9wZWRpYS5jb20vZXMvcG9zdHMvMi83LzEvZXN0cmVsbGFfZGVfbWFyXzE3Ml9vcmlnLmpwZyIsImNyZWF0ZWRBdCI6IjIwMjMtMDEtMDRUMTc6MjA6NDcuMjA2WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDEtMDRUMTc6MjA6NDcuMjA2WiIsIl9fdiI6MH0sImlhdCI6MTY3Mjk0NjY0MSwiZXhwIjoxNjcyOTQ3MjQxfQ.wwK_R2VG4X2wqkFLllyDf9YnagK9Ck73uUZSfV__hhY",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzYjViNTZmYWI1ZWEzZjMxZDg2NjVjMiIsInVzZXJuYW1lIjoibmljb2FydSIsIm5hbWUiOiJOaWNvbMOhcyBBcnVndWV0ZSIsImVtYWlsIjoibmljb19hcnVAeWFob28uY29tLmFyIiwidGVsZXBob25lIjoiKzU0OTExNDg4ODk4NTEiLCJhZGRyZXNzIjoiRHJhZ28gMzMwIiwiaW1ndXJsIjoiaHR0cHM6Ly9jZG4wLmJpb2VuY2ljbG9wZWRpYS5jb20vZXMvcG9zdHMvMi83LzEvZXN0cmVsbGFfZGVfbWFyXzE3Ml9vcmlnLmpwZyIsImNyZWF0ZWRBdCI6IjIwMjMtMDEtMDRUMTc6MjA6NDcuMjA2WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDEtMDRUMTc6MjA6NDcuMjA2WiIsIl9fdiI6MH0sImlhdCI6MTY3Mjk1ODk1NCwiZXhwIjoxNjcyOTU5NTU0fQ.UBGbEQmZYg3WgGxIjhPiRsa3wQA2oJUD4STqUKzQdj4",
 									"type": "string"
 								}
 							]
@@ -295,9 +296,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{local8080}}/api/carritos/productos",
+							"raw": "{{vercel}}/api/carritos/productos",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"api",
@@ -316,7 +317,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzYjViNTZmYWI1ZWEzZjMxZDg2NjVjMiIsInVzZXJuYW1lIjoibmljb2FydSIsIm5hbWUiOiJOaWNvbMOhcyBBcnVndWV0ZSIsImVtYWlsIjoibmljb19hcnVAeWFob28uY29tLmFyIiwidGVsZXBob25lIjoiKzU0OTExNDg4ODk4NTEiLCJhZGRyZXNzIjoiRHJhZ28gMzMwIiwiaW1ndXJsIjoiaHR0cHM6Ly9jZG4wLmJpb2VuY2ljbG9wZWRpYS5jb20vZXMvcG9zdHMvMi83LzEvZXN0cmVsbGFfZGVfbWFyXzE3Ml9vcmlnLmpwZyIsImNyZWF0ZWRBdCI6IjIwMjMtMDEtMDRUMTc6MjA6NDcuMjA2WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDEtMDRUMTc6MjA6NDcuMjA2WiIsIl9fdiI6MH0sImlhdCI6MTY3Mjk0NzI3MSwiZXhwIjoxNjcyOTQ3ODcxfQ.Zfax6CFMqVoF1oLtK_-6IX0LUtmoGAB3kcziYDK46W0",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzYjViNTZmYWI1ZWEzZjMxZDg2NjVjMiIsInVzZXJuYW1lIjoibmljb2FydSIsIm5hbWUiOiJOaWNvbMOhcyBBcnVndWV0ZSIsImVtYWlsIjoibmljb19hcnVAeWFob28uY29tLmFyIiwidGVsZXBob25lIjoiKzU0OTExNDg4ODk4NTEiLCJhZGRyZXNzIjoiRHJhZ28gMzMwIiwiaW1ndXJsIjoiaHR0cHM6Ly9jZG4wLmJpb2VuY2ljbG9wZWRpYS5jb20vZXMvcG9zdHMvMi83LzEvZXN0cmVsbGFfZGVfbWFyXzE3Ml9vcmlnLmpwZyIsImNyZWF0ZWRBdCI6IjIwMjMtMDEtMDRUMTc6MjA6NDcuMjA2WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDEtMDRUMTc6MjA6NDcuMjA2WiIsIl9fdiI6MH0sImlhdCI6MTY3Mjk1ODk1NCwiZXhwIjoxNjcyOTU5NTU0fQ.UBGbEQmZYg3WgGxIjhPiRsa3wQA2oJUD4STqUKzQdj4",
 									"type": "string"
 								}
 							]
@@ -333,9 +334,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{local8080}}/api/carritos/productos",
+							"raw": "{{vercel}}/api/carritos/productos",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"api",
@@ -362,9 +363,9 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{local8080}}/api/carritos/productos/",
+							"raw": "{{vercel}}/api/carritos/productos/",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"api",
@@ -392,9 +393,9 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{local8080}}/api/carritos/productos/:idItem",
+							"raw": "{{vercel}}/api/carritos/productos/:idItem",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"api",
@@ -433,9 +434,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{local8080}}/api/users/session",
+							"raw": "{{vercel}}/api/users/session",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"api",
@@ -461,9 +462,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{local8080}}/api/users/signup",
+							"raw": "{{vercel}}/api/users/signup",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"api",
@@ -489,9 +490,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{local8080}}/api/users/login",
+							"raw": "{{vercel}}/api/users/login",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"api",
@@ -508,9 +509,9 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{local8080}}/api/users/delete/:userId",
+							"raw": "{{vercel}}/api/users/delete/:userId",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"api",
@@ -541,7 +542,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzYjViNTZmYWI1ZWEzZjMxZDg2NjVjMiIsInVzZXJuYW1lIjoibmljb2FydSIsIm5hbWUiOiJOaWNvbMOhcyBBcnVndWV0ZSIsImVtYWlsIjoibmljb19hcnVAeWFob28uY29tLmFyIiwidGVsZXBob25lIjoiKzU0OTExNDg4ODk4NTEiLCJhZGRyZXNzIjoiRHJhZ28gMzMwIiwiaW1ndXJsIjoiaHR0cHM6Ly9jZG4wLmJpb2VuY2ljbG9wZWRpYS5jb20vZXMvcG9zdHMvMi83LzEvZXN0cmVsbGFfZGVfbWFyXzE3Ml9vcmlnLmpwZyIsImNyZWF0ZWRBdCI6IjIwMjMtMDEtMDRUMTc6MjA6NDcuMjA2WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDEtMDRUMTc6MjA6NDcuMjA2WiIsIl9fdiI6MH0sImlhdCI6MTY3Mjk0NzI3MSwiZXhwIjoxNjcyOTQ3ODcxfQ.Zfax6CFMqVoF1oLtK_-6IX0LUtmoGAB3kcziYDK46W0",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzYjViNTZmYWI1ZWEzZjMxZDg2NjVjMiIsInVzZXJuYW1lIjoibmljb2FydSIsIm5hbWUiOiJOaWNvbMOhcyBBcnVndWV0ZSIsImVtYWlsIjoibmljb19hcnVAeWFob28uY29tLmFyIiwidGVsZXBob25lIjoiKzU0OTExNDg4ODk4NTEiLCJhZGRyZXNzIjoiRHJhZ28gMzMwIiwiaW1ndXJsIjoiaHR0cHM6Ly9jZG4wLmJpb2VuY2ljbG9wZWRpYS5jb20vZXMvcG9zdHMvMi83LzEvZXN0cmVsbGFfZGVfbWFyXzE3Ml9vcmlnLmpwZyIsImNyZWF0ZWRBdCI6IjIwMjMtMDEtMDRUMTc6MjA6NDcuMjA2WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDEtMDRUMTc6MjA6NDcuMjA2WiIsIl9fdiI6MH0sImlhdCI6MTY3Mjk1ODk1NCwiZXhwIjoxNjcyOTU5NTU0fQ.UBGbEQmZYg3WgGxIjhPiRsa3wQA2oJUD4STqUKzQdj4",
 									"type": "string"
 								}
 							]
@@ -549,9 +550,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{local8080}}/api/pedidos",
+							"raw": "{{vercel}}/api/pedidos",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"api",
@@ -577,9 +578,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{local8080}}/api/pedidos/:idPedido",
+							"raw": "{{vercel}}/api/pedidos/:idPedido",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"api",
@@ -604,7 +605,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzYjViNTZmYWI1ZWEzZjMxZDg2NjVjMiIsInVzZXJuYW1lIjoibmljb2FydSIsIm5hbWUiOiJOaWNvbMOhcyBBcnVndWV0ZSIsImVtYWlsIjoibmljb19hcnVAeWFob28uY29tLmFyIiwidGVsZXBob25lIjoiKzU0OTExNDg4ODk4NTEiLCJhZGRyZXNzIjoiRHJhZ28gMzMwIiwiaW1ndXJsIjoiaHR0cHM6Ly9jZG4wLmJpb2VuY2ljbG9wZWRpYS5jb20vZXMvcG9zdHMvMi83LzEvZXN0cmVsbGFfZGVfbWFyXzE3Ml9vcmlnLmpwZyIsImNyZWF0ZWRBdCI6IjIwMjMtMDEtMDRUMTc6MjA6NDcuMjA2WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDEtMDRUMTc6MjA6NDcuMjA2WiIsIl9fdiI6MH0sImlhdCI6MTY3Mjk0NzI3MSwiZXhwIjoxNjcyOTQ3ODcxfQ.Zfax6CFMqVoF1oLtK_-6IX0LUtmoGAB3kcziYDK46W0",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYzYjc1NDg5NDM5OTk1YzhkZTgyYWZlOSIsInVzZXJuYW1lIjoibmljb2FydTMiLCJuYW1lIjoiTmljb2zDoXMgQXJ1Z3VldGUiLCJlbWFpbCI6Im5pY29fYXJ1M0B5YWhvby5jb20uYXIiLCJ0ZWxlcGhvbmUiOiIrNTQ5MTE0ODg4OTg1MSIsImFkZHJlc3MiOiJEcmFnbyAzMzAiLCJpbWd1cmwiOiJodHRwczovL2NkbjAuYmlvZW5jaWNsb3BlZGlhLmNvbS9lcy9wb3N0cy8yLzcvMS9lc3RyZWxsYV9kZV9tYXJfMTcyX29yaWcuanBnIiwiY3JlYXRlZEF0IjoiMjAyMy0wMS0wNVQyMjo1MTo1My45NjdaIiwidXBkYXRlZEF0IjoiMjAyMy0wMS0wNVQyMjo1MTo1My45NjdaIiwiX192IjowfSwiaWF0IjoxNjcyOTU5MTM1LCJleHAiOjE2NzI5NTk3MzV9.3Tx1f9FlNfu7pFpVfblenqGNacwDY_J9yFJHAq6KKBs",
 									"type": "string"
 								}
 							]
@@ -612,9 +613,9 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "{{local8080}}/api/pedidos",
+							"raw": "{{vercel}}/api/pedidos",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"api",
@@ -635,9 +636,9 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "{{local8080}}/fake/productos?cantidad=2",
+							"raw": "{{vercel}}/fake/productos?cantidad=2",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"fake",
@@ -674,9 +675,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{local8080}}/info",
+							"raw": "{{vercel}}/info",
 							"host": [
-								"{{local8080}}"
+								"{{vercel}}"
 							],
 							"path": [
 								"info"
