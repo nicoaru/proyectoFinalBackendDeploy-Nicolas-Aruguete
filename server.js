@@ -18,7 +18,8 @@ var cors = require('cors')
 const {logger, logEndpoint} = require("./profilling/logger_config.js");
 
 
-
+let serverActualPort
+let serverActualHost
 
 //EXPRESS
 const app = express()
@@ -86,8 +87,7 @@ app.use(function(req, res, next) {
 // INSTANCIA DE SERVER SOCKET.IO PASANDOLE LA INSTANCIA DE HTTP.SERVER COMO PARAMETRO
 // const socketServer = new SocketServer(httpServer) 
 
-let serverActualPort
-let serverActualHost
+
 // FUNCIÓN CONECTAR SERVIDOR
 function connectServer (port) {
     const server = app.listen(port, () => {
