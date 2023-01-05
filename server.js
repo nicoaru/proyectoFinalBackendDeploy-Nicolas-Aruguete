@@ -2,7 +2,7 @@ const express = require("express")
 const compression = require('compression')
 const gzipMiddleware = compression()
 const {Server: HTTPServer} = require("http")
-const {Server: SocketServer} = require("socket.io")
+// const {Server: SocketServer} = require("socket.io")
 
 const {routerProductos} = require('./routes/routerProductos.js')
 const {routerCarritos} = require('./routes/routerCarritos.js')
@@ -66,10 +66,10 @@ app.use(function(req, res, next) {
 
 
 // INSTANCIA DE HTTP.SERVER PASANDOLE EL OBJETO APP COMO PARAMETRO
-const httpServer = new HTTPServer(app)
+// const httpServer = new HTTPServer(app)
 
 // INSTANCIA DE SERVER SOCKET.IO PASANDOLE LA INSTANCIA DE HTTP.SERVER COMO PARAMETRO
-const socketServer = new SocketServer(httpServer) 
+// const socketServer = new SocketServer(httpServer) 
 
 
 // FUNCIÓN CONECTAR SERVIDOR
@@ -86,7 +86,7 @@ function connectServer (port) {
 
 module.exports = {
     connectServer, 
-    socketServer
+    // socketServer
 }
 
 

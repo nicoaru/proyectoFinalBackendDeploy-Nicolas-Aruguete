@@ -7,7 +7,7 @@ console.log("NODE_ENV ", NODE_ENV)
 const server = connectServer(PORT)
 
 //SOCKET SERVER
-require('./socket.js')
+// require('./socket.js')
 
 
 
