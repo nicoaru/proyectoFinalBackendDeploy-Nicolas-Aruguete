@@ -52,6 +52,10 @@ app.use("/api/users", routerUsers)
 app.use("/fake", routerFake)
 app.use("/info", routerInfo)
 
+app.get('/', (req, res) => {
+    res.json({'message': 'Bienvienido'});
+  })
+
 // ruta no existente
 app.use(function(req, res, next) {
     logger.warn(`Ruta ${req.url} - método ${req.method} - no existe`)
