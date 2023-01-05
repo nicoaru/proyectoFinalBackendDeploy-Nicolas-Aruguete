@@ -56,7 +56,7 @@ app.get('/', (req, res) => {
     res.json({'message': 'Bienvienido'});
   })
 
-  routerInfo.get('/info', async (req, res) => {
+app.get('/info', async (req, res) => {
     const info = {
         host: serverActualHost,
         port: serverActualPort,
