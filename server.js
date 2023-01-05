@@ -50,11 +50,26 @@ app.use("/api/carritos", routerCarritos)
 app.use("/api/pedidos", routerPedidos)
 app.use("/api/users", routerUsers)
 app.use("/fake", routerFake)
-app.use("/info", routerInfo)
+// app.use("/info", routerInfo)
 
 app.get('/', (req, res) => {
     res.json({'message': 'Bienvienido'});
   })
+
+  routerInfo.get('/info', async (req, res) => {
+    const info = {
+        host: serverActualHost,
+        port: serverActualPort,
+        pathEjecucion: process.execPath,
+        sistemaOperativo: process.platform,
+        processId: process.pid,
+        nodeVersion: process.version,
+        carpeta: process.cwd(),
+        memoriaTotalReservada: process.memoryUsage.rss()
+    }
+
+    res.json(info)
+})
 
 // ruta no existente
 app.use(function(req, res, next) {
@@ -71,10 +86,13 @@ app.use(function(req, res, next) {
 // INSTANCIA DE SERVER SOCKET.IO PASANDOLE LA INSTANCIA DE HTTP.SERVER COMO PARAMETRO
 // const socketServer = new SocketServer(httpServer) 
 
-
+let serverActualPort
+let serverActualHost
 // FUNCIÓN CONECTAR SERVIDOR
 function connectServer (port) {
     const server = app.listen(port, () => {
+        serverActualHost = server.address().address
+        serverActualPort = server.address().port
         console.log(`Servidor escuchando en puerto ${server.address().port}. Proceso ${process.pid}`)
     })
     .on("error", error => console.log(`Error conectando al servidor => ${error.message}`))
